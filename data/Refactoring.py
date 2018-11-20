@@ -31,40 +31,28 @@ class Refactoring(object):
             attribute.append(value)
 
     def show_information(self):
-        #print(self.repository)
-        #print(self.commit)
+        print(self.repository)
+        print(self.commit)
         c = dict(Counter(self.extract_method_source_class))
-        #commits with more than 10 refactored elements
-        if len(c.values()) > 5:
-            print("Extract Method")
-            print(c.values())
+        print("Extract Method")
+        print(c.values())
 
         c = dict(Counter(self.extract_superclass_source_class))
-        #commits with more than 10 refactored elements
-        if len(c.values()) > 5:
-            print("Extract Superclass")
-            print(c.values())
+        print("Extract Superclass")
+        print(c.values())
 
         c = dict(Counter(self.move_method_source_class))
-        #commits with more than 10 refactored elements
-        if len(c.values()) > 5:
-            print("Move Method")
-            print(c.values())
+        print("Move Method")
+        print(c.values())
 
         c = dict(Counter(self.inline_method_source_class))
-        #commits with more than 10 refactored elements
-        if len(c.values()) > 5:
-            print("Inline Method")
-            print(c.values())
+        print("Inline Method")
+        print(c.values())
 
         c = dict(Counter(self.pull_up_method_source_class))
-        #commits with more than 10 refactored elements
-        if len(c.values()) > 5:
-            print("Pull Up Method")
-            print(c.values())
+        print("Pull Up Method")
+        print(c.values())
 
         c = dict(Counter(self.push_down_method_source_class))
-        #commits with more than 10 refactored elements
-        if len(c.values()) > 5:
-            print("Push Down Method")
-            print(c.values())
+        print("Push Down Method")
+        print(c.values())
